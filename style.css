@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.container {
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.head {
+  background-color: #a3d9d9;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  color: black;
+}
+
+.head_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.linkedin-icon img {
+  height: 40px;
+  width: 40px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.linkedin-icon img:hover {
+  opacity: 1;
+}
+
+.title {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.title h2 {
+  padding-left: 4.5vh;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.gallery img {
+  overflow: hidden;
+  /* border: 1px solid #da0000; */
+  border-radius: 5px;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  user-select: none;
+  font-size: 1.2em;
+}
+
+.branding_container {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 50px;
+}
+
+.web_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 5px;
+  padding: 30px;
+}
+
+.web_container img {
+  border-radius: 5px;
+  border-bottom: 2px dashed black;
+}
+
+.web_gallery {
+  background-color: #cedddd;
+}
