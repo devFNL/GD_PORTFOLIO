@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
 
 .web_container img {
   border-radius: 5px;
-  border-bottom: 2px dashed black;
+  /* border-bottom: 2px dashed black; */
 }
 
 .web_gallery {
